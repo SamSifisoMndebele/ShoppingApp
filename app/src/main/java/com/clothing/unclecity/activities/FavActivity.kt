@@ -1,24 +1,17 @@
 package com.clothing.unclecity.activities
 
-import android.content.Context
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
-import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.clothing.unclecity.adapters.CartAdapter
 import com.clothing.unclecity.adapters.FavAdapter
-import com.clothing.unclecity.adapters.ProductListAdapter
-import com.clothing.unclecity.databinding.ActivityCartBinding
 import com.clothing.unclecity.databinding.ActivityFavBinding
-import com.clothing.unclecity.models.Product
 import com.clothing.unclecity.utils.LoadingDialog
-import com.google.firebase.auth.ktx.auth
+import com.google.firebase.Firebase
+import com.google.firebase.auth.auth
 import com.google.firebase.firestore.Query
-import com.google.firebase.firestore.ktx.firestore
-import com.google.firebase.ktx.Firebase
+import com.google.firebase.firestore.firestore
 
 class FavActivity : AppCompatActivity() {
 

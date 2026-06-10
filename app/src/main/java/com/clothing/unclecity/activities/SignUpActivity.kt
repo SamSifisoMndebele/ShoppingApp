@@ -2,23 +2,23 @@ package com.clothing.unclecity.activities
 
 import android.content.Context
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.view.View
 import android.view.WindowManager
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.clothing.unclecity.R
-import com.google.firebase.auth.ktx.auth
-import com.google.firebase.firestore.ktx.firestore
-import com.google.firebase.ktx.Firebase
-import com.clothing.unclecity.models.User
 import com.clothing.unclecity.databinding.ActivitySignUpBinding
+import com.clothing.unclecity.models.User
 import com.clothing.unclecity.utils.Extensions.shortToast
 import com.clothing.unclecity.utils.LoadingDialog
 import com.clothing.unclecity.utils.UserType
+import com.google.firebase.Firebase
+import com.google.firebase.auth.auth
+import com.google.firebase.firestore.firestore
 
 class SignUpActivity : AppCompatActivity() {
 

@@ -2,24 +2,21 @@ package com.clothing.unclecity.activities
 
 import android.content.Context
 import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.clothing.unclecity.adapters.CheckoutAdapter
 import com.clothing.unclecity.adapters.OrderDetailsAdapter
 import com.clothing.unclecity.databinding.ActivityOrderDetailsBinding
 import com.clothing.unclecity.models.Order
-import com.clothing.unclecity.models.OrderProduct
-import com.clothing.unclecity.models.Product
 import com.clothing.unclecity.models.StoreInfo
 import com.clothing.unclecity.utils.OrderStatus
+import com.google.firebase.Firebase
 import com.google.firebase.Timestamp
-import com.google.firebase.firestore.ktx.firestore
-import com.google.firebase.firestore.ktx.toObject
-import com.google.firebase.ktx.Firebase
+import com.google.firebase.firestore.firestore
+import com.google.firebase.firestore.toObject
 
 class OrderDetailsActivity : AppCompatActivity() {
 

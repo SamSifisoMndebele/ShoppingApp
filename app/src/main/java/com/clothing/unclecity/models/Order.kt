@@ -2,8 +2,8 @@ package com.clothing.unclecity.models
 
 import android.os.Parcel
 import android.os.Parcelable
-import com.google.firebase.Timestamp
 import com.clothing.unclecity.utils.OrderStatus
+import com.google.firebase.Timestamp
 
 data class Order (
     val orderNumber : String = "",

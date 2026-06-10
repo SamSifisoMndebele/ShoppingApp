@@ -1,22 +1,16 @@
 package com.clothing.unclecity.activities
 
-import android.content.Context
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Patterns
 import android.view.WindowManager
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.clothing.unclecity.databinding.ActivityPasswordBinding
-import com.clothing.unclecity.models.User
-import com.clothing.unclecity.utils.Extensions.longToast
 import com.clothing.unclecity.utils.Extensions.shortToast
 import com.clothing.unclecity.utils.LoadingDialog
-import com.clothing.unclecity.utils.UserType
-import com.google.firebase.auth.ktx.auth
-import com.google.firebase.firestore.ktx.firestore
-import com.google.firebase.firestore.ktx.toObject
-import com.google.firebase.ktx.Firebase
+import com.google.firebase.Firebase
+import com.google.firebase.auth.auth
 
 class PasswordActivity : AppCompatActivity() {
     private lateinit var binding : ActivityPasswordBinding

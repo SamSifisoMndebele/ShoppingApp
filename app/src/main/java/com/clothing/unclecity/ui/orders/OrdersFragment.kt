@@ -5,22 +5,17 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.clothing.unclecity.activities.MainActivity
-import com.clothing.unclecity.adapters.CartAdapter
 import com.clothing.unclecity.adapters.OrdersAdapter
-import com.clothing.unclecity.databinding.FragmentGalleryBinding
 import com.clothing.unclecity.databinding.FragmentOrdersBinding
 import com.clothing.unclecity.utils.OrderStatus
-import com.google.firebase.auth.ktx.auth
+import com.google.firebase.Firebase
+import com.google.firebase.auth.auth
 import com.google.firebase.firestore.Query
-import com.google.firebase.firestore.ktx.firestore
-import com.google.firebase.ktx.Firebase
-import com.google.firestore.v1.StructuredQuery.Order
+import com.google.firebase.firestore.firestore
 
 class OrdersFragment : Fragment() {
 

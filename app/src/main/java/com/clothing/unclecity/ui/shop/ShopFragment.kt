@@ -7,22 +7,18 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.PopupMenu
-import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.widget.SearchView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.clothing.unclecity.activities.MainActivity
 import com.clothing.unclecity.R
 import com.clothing.unclecity.activities.AddProductActivity
+import com.clothing.unclecity.activities.MainActivity
 import com.clothing.unclecity.adapters.CategoriesListAdapter
-import com.clothing.unclecity.adapters.ProductListAdapter
 import com.clothing.unclecity.databinding.FragmentShopBinding
-import com.clothing.unclecity.models.Category
+import com.google.firebase.Firebase
 import com.google.firebase.firestore.Query
-import com.google.firebase.firestore.ktx.firestore
-import com.google.firebase.ktx.Firebase
+import com.google.firebase.firestore.firestore
 
 class ShopFragment : Fragment() {
 

@@ -2,31 +2,26 @@ package com.clothing.unclecity.activities
 
 import android.annotation.SuppressLint
 import android.app.AlertDialog
-import android.content.Intent
 import android.net.Uri
 import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
-import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.core.text.isDigitsOnly
 import com.bumptech.glide.Glide
-import com.clothing.unclecity.R
 import com.clothing.unclecity.databinding.AddEditProductActivityBinding
 import com.clothing.unclecity.models.Category
 import com.clothing.unclecity.models.Product
-import com.clothing.unclecity.utils.Extensions.longToast
 import com.clothing.unclecity.utils.Extensions.shortToast
 import com.clothing.unclecity.utils.Extensions.tempDisable
 import com.clothing.unclecity.utils.Extensions.to2DecimalString
 import com.clothing.unclecity.utils.LoadingDialog
 import com.clothing.unclecity.utils.OpenPicturesContract
-import com.google.firebase.Timestamp
+import com.google.firebase.Firebase
 import com.google.firebase.firestore.SetOptions
-import com.google.firebase.firestore.ktx.firestore
-import com.google.firebase.ktx.Firebase
-import com.google.firebase.storage.ktx.storage
+import com.google.firebase.firestore.firestore
+import com.google.firebase.storage.storage
 
 class EditProductActivity : AppCompatActivity() {
     private lateinit var binding: AddEditProductActivityBinding

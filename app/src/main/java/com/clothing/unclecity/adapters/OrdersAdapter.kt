@@ -3,21 +3,22 @@ package com.clothing.unclecity.adapters
 import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
-import android.view.*
-import android.widget.*
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
-import com.clothing.unclecity.activities.MainActivity
-import com.google.firebase.firestore.Query
 import com.clothing.unclecity.R
+import com.clothing.unclecity.activities.MainActivity
 import com.clothing.unclecity.activities.OrderDetailsActivity
 import com.clothing.unclecity.models.Order
 import com.clothing.unclecity.utils.Extensions.tempDisable
 import com.clothing.unclecity.utils.Extensions.to2DecimalString
 import com.clothing.unclecity.utils.OrderStatus
-import com.google.firebase.firestore.ktx.firestore
-import com.google.firebase.ktx.Firebase
+import com.google.firebase.Firebase
+import com.google.firebase.firestore.Query
+import com.google.firebase.firestore.firestore
 
 class OrdersAdapter(
     private val activity: MainActivity,

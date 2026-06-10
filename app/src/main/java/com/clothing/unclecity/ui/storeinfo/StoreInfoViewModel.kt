@@ -4,10 +4,10 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.clothing.unclecity.models.StoreInfo
+import com.google.firebase.Firebase
 import com.google.firebase.firestore.SetOptions
-import com.google.firebase.firestore.ktx.firestore
-import com.google.firebase.firestore.ktx.toObject
-import com.google.firebase.ktx.Firebase
+import com.google.firebase.firestore.firestore
+import com.google.firebase.firestore.toObject
 
 class StoreInfoViewModel : ViewModel() {
     private val storeRef = Firebase.firestore.collection("Store").document("StoreInfo")

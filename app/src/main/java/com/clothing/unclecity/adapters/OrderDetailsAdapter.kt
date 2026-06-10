@@ -1,27 +1,17 @@
 package com.clothing.unclecity.adapters
 
 import android.annotation.SuppressLint
-import android.content.Context
-import android.content.Intent
-import android.text.Html
-import android.view.*
-import android.widget.*
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.google.firebase.auth.ktx.auth
-import com.google.firebase.firestore.DocumentSnapshot
-import com.google.firebase.firestore.Query
 import com.clothing.unclecity.R
-import com.clothing.unclecity.activities.*
+import com.clothing.unclecity.activities.OrderDetailsActivity
 import com.clothing.unclecity.models.OrderProduct
-import com.clothing.unclecity.models.Product
-import com.clothing.unclecity.utils.Extensions.tempDisable
 import com.clothing.unclecity.utils.Extensions.to2DecimalString
-import com.google.firebase.firestore.FieldValue
-import com.google.firebase.firestore.ktx.firestore
-import com.google.firebase.ktx.Firebase
-import java.util.*
-import kotlin.collections.ArrayList
 
 class OrderDetailsAdapter(
     private val activity: OrderDetailsActivity,

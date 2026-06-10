@@ -1,28 +1,24 @@
 package com.clothing.unclecity.activities
 
-import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
-import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.clothing.unclecity.adapters.CartAdapter
-import com.clothing.unclecity.adapters.ProductListAdapter
 import com.clothing.unclecity.databinding.ActivityCartBinding
 import com.clothing.unclecity.models.OrderProduct
 import com.clothing.unclecity.models.Product
 import com.clothing.unclecity.utils.Extensions.to2DecimalString
 import com.clothing.unclecity.utils.LoadingDialog
-import com.google.firebase.auth.ktx.auth
+import com.google.firebase.Firebase
+import com.google.firebase.auth.auth
 import com.google.firebase.firestore.DocumentSnapshot
 import com.google.firebase.firestore.Query
-import com.google.firebase.firestore.ktx.firestore
-import com.google.firebase.firestore.ktx.toObject
-import com.google.firebase.ktx.Firebase
+import com.google.firebase.firestore.firestore
+import com.google.firebase.firestore.toObject
 
 class CartActivity : AppCompatActivity() {
 

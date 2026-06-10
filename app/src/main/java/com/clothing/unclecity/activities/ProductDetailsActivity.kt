@@ -1,38 +1,30 @@
 package com.clothing.unclecity.activities
 
 import android.annotation.SuppressLint
-import android.content.Context
 import android.content.Intent
-import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Html
 import android.view.View
 import android.view.ViewGroup
 import android.widget.RadioButton
-import android.widget.RadioGroup
 import android.widget.RelativeLayout
-import android.widget.Space
 import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
-import androidx.core.view.marginTop
-import androidx.core.view.setPadding
+import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
 import com.clothing.unclecity.R
-import com.clothing.unclecity.models.Product
-import com.google.firebase.auth.ktx.auth
-import com.google.firebase.firestore.ktx.firestore
-import com.google.firebase.ktx.Firebase
 import com.clothing.unclecity.databinding.ActivityProductDetailsBinding
-import com.clothing.unclecity.utils.Extensions.shortToast
+import com.clothing.unclecity.models.Product
 import com.clothing.unclecity.utils.Extensions.tempDisable
 import com.clothing.unclecity.utils.Extensions.to2DecimalString
 import com.clothing.unclecity.utils.LoadingDialog
+import com.google.firebase.Firebase
+import com.google.firebase.auth.auth
 import com.google.firebase.firestore.FieldValue
 import com.google.firebase.firestore.ListenerRegistration
-import com.google.firebase.firestore.ktx.toObject
-import com.google.firebase.storage.ktx.storage
+import com.google.firebase.firestore.firestore
+import com.google.firebase.firestore.toObject
+import com.google.firebase.storage.storage
 
 class ProductDetailsActivity : AppCompatActivity() {
 

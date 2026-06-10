@@ -10,13 +10,13 @@ import android.view.ViewGroup
 import androidx.core.widget.doOnTextChanged
 import androidx.fragment.app.Fragment
 import com.bumptech.glide.Glide
-import com.clothing.unclecity.activities.MainActivity
 import com.clothing.unclecity.R
 import com.clothing.unclecity.activities.LoginActivity
+import com.clothing.unclecity.activities.MainActivity
 import com.clothing.unclecity.databinding.FragmentProfileBinding
 import com.clothing.unclecity.utils.OpenPicturesContract
-import com.google.firebase.auth.ktx.auth
-import com.google.firebase.ktx.Firebase
+import com.google.firebase.Firebase
+import com.google.firebase.auth.auth
 
 class ProfileFragment : Fragment() {
 

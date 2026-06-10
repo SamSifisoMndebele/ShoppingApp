@@ -1,36 +1,29 @@
 package com.clothing.unclecity.activities
 
-import android.content.Context
 import android.content.Intent
 import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.LinearLayout
 import android.widget.TextView
-import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.clothing.unclecity.R
-import com.clothing.unclecity.adapters.CartAdapter
 import com.clothing.unclecity.adapters.CheckoutAdapter
 import com.clothing.unclecity.databinding.ActivityCheckoutBinding
 import com.clothing.unclecity.models.Order
 import com.clothing.unclecity.models.OrderProduct
-import com.clothing.unclecity.models.Product
 import com.clothing.unclecity.models.StoreInfo
 import com.clothing.unclecity.utils.Extensions.shortToast
-import com.clothing.unclecity.utils.Extensions.to2DecimalString
 import com.clothing.unclecity.utils.LoadingDialog
 import com.clothing.unclecity.utils.OrderStatus
+import com.google.firebase.Firebase
 import com.google.firebase.Timestamp
-import com.google.firebase.auth.ktx.auth
-import com.google.firebase.firestore.DocumentSnapshot
+import com.google.firebase.auth.auth
 import com.google.firebase.firestore.FieldValue
-import com.google.firebase.firestore.Query
-import com.google.firebase.firestore.ktx.firestore
-import com.google.firebase.firestore.ktx.toObject
-import com.google.firebase.ktx.Firebase
+import com.google.firebase.firestore.firestore
+import com.google.firebase.firestore.toObject
 
 class CheckoutActivity : AppCompatActivity() {
 
