@@ -1,0 +1,148 @@
+[versions]
+adsInstallreferrer = "3.4.30.307"
+agp = "9.0.1"
+googleAssetDelivery = "2.3.0"
+googleFeatureDelivery = "2.1.0"
+coreKtx = "1.18.0"
+junit = "4.13.2"
+junitVersion = "1.3.0"
+espressoCore = "3.7.0"
+lifecycleRuntimeKtx = "2.10.0"
+activityCompose = "1.13.0"
+kotlin = "2.3.21"
+composeBom = "2026.05.01"
+gms = "4.4.4"
+ksp = "2.3.5"
+crashlytics = "3.0.7"
+firebase-perf = "2.0.2"
+hilt = "2.59.2"
+hiltNavigationCompose = "1.3.0"
+googleLibrariesMapsplatformSecrets = "2.0.1"
+adsMobileSdk = "1.1.1"
+agcp = "1.9.5.301"
+hms = "6.12.0.300"
+hms-appservice = "6.14.0.300"
+firebaseBom = "34.14.1"
+datastore = "1.3.0-alpha09"
+coreSplashscreen = "1.2.0"
+okhttp = "5.3.2"
+okio = "3.17.0"
+playServicesAds = "25.3.0"
+playServicesAuth = "21.6.0"
+lifecycleProcess = "2.10.0"
+appUpdate = "2.1.0"
+review = "2.0.2"
+aws-sdk = "1.6.90"
+work = "2.11.2"
+gradle = "9.0.1"
+material = "1.14.0"
+material3 = "1.10.0-alpha05"
+glide = "1.0.0-beta09"
+zoomlayout = "1.9.0"
+room = "2.8.4"
+dynamicability = "1.0.18.300"
+sqlite = "2.6.2"
+appcompat = "1.7.1"
+kotlinxSerialization = "1.11.0"
+lottieCompose = "6.7.1"
+pdfViewer = "1.0.0-alpha18"
+recyclerview = "1.4.0"
+installreferrer = "2.2"
+credentials = "1.6.0"
+googleid = "1.2.0"
+glance = "1.1.1"
+
+[libraries]
+androidx-glance = { module = "androidx.glance:glance", version.ref = "glance" }
+androidx-glance-appwidget = { module = "androidx.glance:glance-appwidget", version.ref = "glance" }
+hms-installreferrer = { module = "com.huawei.hms:ads-installreferrer", version.ref = "adsInstallreferrer" }
+androidx-credentials = { group = "androidx.credentials", name = "credentials", version.ref = "credentials" }
+androidx-credentials-play-auth = { group = "androidx.credentials", name = "credentials-play-services-auth", version.ref = "credentials" }
+googleid = { group = "com.google.android.libraries.identity.googleid", name = "googleid", version.ref = "googleid" }
+androidx-recyclerview = { group = "androidx.recyclerview", name = "recyclerview", version.ref = "recyclerview" }
+androidx-pdf-viewer = { group = "androidx.pdf", name = "pdf-viewer-fragment", version.ref = "pdfViewer" }
+androidx-pdf-ink = { group = "androidx.pdf", name = "pdf-ink", version.ref = "pdfViewer" }
+androidx-pdf-viewer-core = { group = "androidx.pdf", name = "pdf-viewer", version.ref = "pdfViewer" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+google-asset-delivery = { module = "com.google.android.play:asset-delivery", version.ref = "googleAssetDelivery" }
+google-asset-delivery-ktx = { module = "com.google.android.play:asset-delivery-ktx", version.ref = "googleAssetDelivery" }
+google-feature-delivery = { module = "com.google.android.play:feature-delivery", version.ref = "googleFeatureDelivery" }
+google-feature-delivery-ktx = { module = "com.google.android.play:feature-delivery-ktx", version.ref = "googleFeatureDelivery" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-compose-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-compose-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-compose-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-compose-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3" }
+ads-mobile-sdk = { module = "com.google.android.libraries.ads.mobile.sdk:ads-mobile-sdk", version.ref = "adsMobileSdk" }
+androidx-material3 = { module = "androidx.compose.material3:material3" }
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }
+hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hilt" }
+androidx-hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hiltNavigationCompose" }
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
+firebase-analytics = { module = "com.google.firebase:firebase-analytics" }
+firebase-perf = { module = "com.google.firebase:firebase-perf" }
+firebase-crashlytics = { module = "com.google.firebase:firebase-crashlytics" }
+firebase-firestore = { module = "com.google.firebase:firebase-firestore" }
+firebase-database = { module = "com.google.firebase:firebase-database" }
+firebase-storage = { module = "com.google.firebase:firebase-storage" }
+firebase-auth = { module = "com.google.firebase:firebase-auth" }
+firebase-appcheck = { module = "com.google.firebase:firebase-appcheck" }
+firebase-appcheck-playintegrity = { module = "com.google.firebase:firebase-appcheck-playintegrity" }
+firebase-appcheck-debug = { module = "com.google.firebase:firebase-appcheck-debug" }
+androidx-core-splashscreen = { module = "androidx.core:core-splashscreen", version.ref = "coreSplashscreen" }
+okhttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttp" }
+okio = { module = "com.squareup.okio:okio", version.ref = "okio" }
+play-services-ads = { module = "com.google.android.gms:play-services-ads", version.ref = "playServicesAds" }
+play-services-auth = { module = "com.google.android.gms:play-services-auth", version.ref = "playServicesAuth" }
+androidx-datastore-preferences = { module = "androidx.datastore:datastore-preferences", version.ref = "datastore" }
+androidx-datastore = { module = "androidx.datastore:datastore", version.ref = "datastore" }
+androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "room" }
+androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
+androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
+aws-s3 = { module = "aws.sdk.kotlin:s3", version.ref = "aws-sdk" }
+sqlite-bundled = { module = "androidx.sqlite:sqlite-bundled", version.ref = "sqlite" }
+androidx-lifecycle-process = { group = "androidx.lifecycle", name = "lifecycle-process", version.ref = "lifecycleProcess" }
+app-update = { module = "com.google.android.play:app-update", version.ref = "appUpdate" }
+app-update-ktx = { module = "com.google.android.play:app-update-ktx", version.ref = "appUpdate" }
+review = { module = "com.google.android.play:review", version.ref = "review" }
+review-ktx = { module = "com.google.android.play:review-ktx", version.ref = "review" }
+androidx-work-runtime-ktx = { group = "androidx.work", name = "work-runtime-ktx", version.ref = "work" }
+gradle = { module = "com.android.tools.build:gradle", version.ref = "gradle" }
+agcp = { module = "com.huawei.agconnect:agcp", version.ref = "agcp"}
+agconnect-core = { module = "com.huawei.agconnect:agconnect-core", version.ref = "agcp" }
+hms-base = { module = "com.huawei.hms:base", version.ref = "hms" }
+hms-appservice = { module = "com.huawei.hms:appservice", version.ref = "hms-appservice" }
+hms-hmscoreinstaller = { group = "com.huawei.hms", name = "hmscoreinstaller", version.ref = "hms" }
+hms-dynamicability = { module = "com.huawei.hms:dynamicability", version.ref = "dynamicability" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+glide-compose = { module = "com.github.bumptech.glide:compose", version.ref = "glide" }
+zoomlayout = { module = "com.otaliastudios:zoomlayout", version.ref = "zoomlayout" }
+compose-material3 = { module = "org.jetbrains.compose.material3:material3", version.ref = "material3" }
+androidx-material3-window-size-class1 = { module = "androidx.compose.material3:material3-window-size-class" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinxSerialization" }
+lottie-compose = { module = "com.airbnb.android:lottie-compose", version.ref = "lottieCompose" }
+installreferrer = { module = "com.android.installreferrer:installreferrer", version.ref = "installreferrer" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+android-dynamic-feature = { id = "com.android.dynamic-feature", version.ref = "agp" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+android-asset-pack = { id = "com.android.asset-pack", version.ref = "agp" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+kotlin-plugin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+google-gms-google-services = { id = "com.google.gms.google-services", version.ref = "gms" }
+huawei-agconnect = { id = "com.huawei.agconnect" }
+google-ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+google-firebase-crashlytics = { id = "com.google.firebase.crashlytics", version.ref = "crashlytics" }
+google-firebase-perf = { id = "com.google.firebase.firebase-perf", version.ref = "firebase-perf" }
+google-dagger-hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+google-libraries-mapsplatform-secrets = { id = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin", version.ref = "googleLibrariesMapsplatformSecrets" }
